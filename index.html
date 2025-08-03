@@ -1,10 +1,67 @@
-<title>web1 - html</title>
-<h1>HTML</h1>
-<p>오늘 나는 새로운 <u>도전</u>을 통해서 </p>다른 기회의 땅을 <br><br>밟아보려고 한다.
-<img src="street.jpg"width="10%">
-<ol>
-    <li><a href="1.html"title="슈프림">슈프림</a></li>
-    <li><a href="2.html"title="스투시">스투시</a></li>
-</ol>
+<head><title>web1 - html</title>
+ <style>
+    body{
+        margin:0px;
+    }
+    a{ 
+        color:black;
+        text-decoration: none;
+    }
+    h1{
+        font-size:100px;
+        text-align:center;
+        border-bottom:1px solid gray;
+        margin:0px;
+        padding:20px;
 
-<a href="https://www.youtube.com/watch?v=OycgifzTHgk&t=150s" target="_blank" title=" 유튜브 링크">시티팝</a>
+    }
+    #grid ol{
+       border-right:1px solid gray;
+       width:100px;
+       margin:0px;
+       padding:20px;
+       padding-left: 35px;
+    }
+    #grid{
+        display: grid;
+        grid-template-columns: 150px 1fr;
+    }
+    #article{
+        padding:32px;
+    }
+    @media(max-width:600px){
+      #grid{
+        display: block;
+      }
+       #grid ol{
+       border-right:none;}
+       h1{
+        border-bottom:none;}
+       }
+
+ </style>
+</head>
+<body>
+  <h1>FASHION</h1>
+  <div id="grid">
+  <ol>
+    <li><a href="1.html"title="슈프림" style="color:gray; text-decoration:underline;">슈프림</a></li>
+    <li><a href="2.html"title="스투시">스투시</a></li>
+    <li><a style="color:gray;"> this is never that</a></li>
+  </ol>
+  <div id="article">
+    <h2>Fashion</h2>
+    <p> 
+    패션(Fashion)은 다양한 문화적 미학을 가진 옷, 풋웨어, 장신구, 화장품, 주얼리의 창조와 이러한 요소들을 사회적 지위, 
+    자기 표현 및 집단 소속의 표식으로 특징적인 의상 스타일과 유행으로 조합하는 것을 설명하기 위해 상호 교환적으로 사용되는 용어이다. 
+    다면적인 용어로서 패션은 의류산업, 패션 디자인, 미학, 그리고 유행을 설명한다.</p><p>'패션'이라는 용어는 '만들다'는 뜻의 라틴어
+     'Facere'에서 유래했으며, 특정 문화적 미학, 패턴, 모티프, 형태, 재단으로 장식된 의상을 제작하고 조합하며 착용하는 것을 설명하여 
+     사람들이 자신의 집단 소속, 가치, 의미, 신념 및 생활 방식을 보여줄 수 있도록 한다. 상품과 의류의 대량 생산이 저렴한 가격으로 전 
+     세계적으로 확산되면서, 패션의 환경적 영향을 줄이고 지속 가능한 패션을 개선하는 것이 정치인, 브랜드, 소비자들 사이에서 시급한 문제가 되었다.
+    </p>
+   </div>
+  </div>
+</body>
+
+<a href="https://www.youtube.com/watch?v=OycgifzTHgk&t=150s" target="_blank" title=" 유튜브 링크">시티팝</a></body>
+ 
